@@ -4,7 +4,8 @@ import social_ES.utils_INE as sc
 import geopandas as gpd
 from shapely.geometry import Point
 
-wd = "<hypercadaster_ES directory in NextCloud>"
+wd = "/home/gmor/Nextcloud2/Beegroup/data/hypercadaster_ES"
+wd_buildsim = "/home/gmor/Nextcloud2/Beegroup/data/CR_BCN_buildsim"
 cadaster_codes = ["08900"] # Cadaster code for Barcelona
 
 # Read the pickle file
@@ -69,8 +70,8 @@ gdf_irec["Projection"] = "EPSG:4326"
 
 # Plot Weather Stations
 interoperability.plot_weather_stations(weather_gdf, "Cluster",
-                                       f"{wd}/results/weather_stations_clusters.png")
+                                       f"{wd_buildsim}/weather_stations_clusters.png")
 
 # Export
 gdf_irec.drop(columns=["Location"], inplace=True)
-gdf_irec.to_pickle(f"{wd}/results/IREC_bcn_input.pkl")
+gdf_irec.to_pickle(f"{wd_buildsim}/IREC_bcn_input.pkl")

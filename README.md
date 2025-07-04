@@ -4,7 +4,6 @@ Welcome to the **CR_BCN_buildsim** repository.
 
 This repository contains scripts, models, and data workflows to simulate the thermal energy demand of approximately 37,000 residential buildings in Barcelona. The simulation engine is based on Reduced Order Grey Box Models (RC models) calibrated with white box TRNSYS simulations, allowing building-level predictions for heating, cooling, and total energy needs under different climate, geometry, and retrofit scenarios.
 
-
 The data required is stored in the NextCloud repository managed by our department at CIMNE.
 
 ---
