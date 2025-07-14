@@ -1,4 +1,4 @@
-# CR_BCN_buildsim
+# Climate Ready Barcelona: Building thermal demand model
 
 Welcome to the **CR_BCN_buildsim** repository.
 
